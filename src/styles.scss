@@ -1,1 +1,94 @@
 /* You can add global styles to this file, and also import other style files */
+/* =========================================
+   FINVIBE GLOBAL DESIGN SYSTEM
+   ========================================= */
+
+:root {
+  /* ------------------------------------------------
+     THEME: NEON OBSIDIAN (Default / Dark Mode)
+     Vibe: Deep, electric, high-contrast, "Cyberpunk Finance"
+     ------------------------------------------------ */
+
+  /* BRAND COLORS */
+  /* Used for: Primary buttons, active states, key branding moments (Logo) */
+  --color-primary: #6D28D9;   /* Violet 700 */
+
+  /* Used for: Deep backgrounds, secondary containers, borders in dark mode */
+  --color-secondary: #2E1065; /* Violet 950 */
+
+  /* ACCENT COLORS */
+  /* Used for: Gradients, "New" badges, primary highlights, call-to-action glow */
+  --color-accent: #C026D3;    /* Fuchsia 600 */
+
+  /* Used for: Secondary highlights, "Best Price" buttons, cool tones */
+  --color-accent-2: #06B6D4;  /* Cyan 500 */
+
+  /* Used for: Warnings, "Beta" tags, warm highlights */
+  --color-accent-3: #EAB308;  /* Yellow 500 */
+
+  /* BACKGROUNDS & SURFACES */
+  /* Used for: The main page background (<body>) */
+  --color-background: #000000; /* Pure Black */
+
+  /* Used for: Cards, modals, sidebars, inputs */
+  --color-surface: #18181B;    /* Zinc 900 */
+
+  /* TYPOGRAPHY */
+  /* Used for: Headings, body text, primary icons */
+  --color-text: #FFFFFF;       /* White */
+
+  /* Used for: Subtitles, helper text, meta data, empty states */
+  --color-text-muted: #A1A1AA; /* Zinc 400 */
+}
+
+/* ------------------------------------------------
+   THEME: STARK WHITE CYBER (Light Mode)
+   Usage: Add data-theme="light" to your <html> or <body> tag
+   Vibe: Clean, clinical, sharp, "High-Tech Minimalist"
+   ------------------------------------------------ */
+[data-theme="light"] {
+  /* Re-mapping variables for light mode context */
+  
+  --color-primary: #7C3AED;    /* Violet 600 (Slightly brighter for white bg) */
+  --color-secondary: #F3F4F6;  /* Gray 100 (Subtle backing) */
+
+  --color-accent: #0891B2;     /* Cyan 600 (Darker cyan for contrast against white) */
+  --color-accent-2: #C026D3;   /* Fuchsia 600 */
+  --color-accent-3: #4B5563;   /* Gray 600 (Neutral accent for light mode) */
+
+  --color-background: #FFFFFF; /* Pure White */
+  --color-surface: #FAFAFA;    /* Off-white/Gray 50 */
+
+  --color-text: #020617;       /* Slate 950 (Sharp Black) */
+  --color-text-muted: #64748B; /* Slate 500 */
+}
+
+/* =========================================
+   BASE RESET & UTILITIES
+   ========================================= */
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  /* Smooth color transition when toggling themes */
+  transition: background-color 0.5s ease, color 0.5s ease;
+  margin: 0;
+  font-family: sans-serif; /* Replace with your font of choice */
+}
+
+/* Utility classes for easy usage in HTML */
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
