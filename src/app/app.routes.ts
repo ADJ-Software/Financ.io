@@ -1,8 +1,6 @@
 import { Routes } from '@angular/router';
-import { Register } from './pages/auth/register/register';
-import { LandingPage } from './pages/landing-page/landing-page';
+import { TestPage } from './pages/test/test-page/test-page';
 
 export const routes: Routes = [
-    {path:'register', component:Register},
-    {path:"", component:LandingPage}
+    {path:'test',component:TestPage}
 ];
