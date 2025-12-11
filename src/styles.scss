@@ -39,6 +39,8 @@
 
   /* Used for: Subtitles, helper text, meta data, empty states */
   --color-text-muted: #A1A1AA; /* Zinc 400 */
+
+  --color-border:rgba(255, 255, 255, 0.063)
 }
 
 /* ------------------------------------------------
@@ -61,6 +63,7 @@
 
   --color-text: #020617;       /* Slate 950 (Sharp Black) */
   --color-text-muted: #64748B; /* Slate 500 */
+  --color-border :rgba(2, 6, 23, 0.063)
 }
 
 /* =========================================
