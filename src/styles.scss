@@ -41,6 +41,16 @@
   --color-text-muted: #A1A1AA; /* Zinc 400 */
 
   --color-border:rgba(255, 255, 255, 0.063)
+    --obsidian-bg: #09090b;       /* Pure dark background */
+  --obsidian-surface: #18181b;  /* Lighter surface for inputs */
+  --neon-primary: #d946ef;      /* Fuchsia/Purple Neon */
+  --neon-glow: rgba(217, 70, 239, 0.25); /* The hazy glow color */
+  --neon-error: #ff3366;        /* Sharp Red/Pink Neon */
+  --neon-error-glow: rgba(255, 51, 102, 0.25);
+  --text-primary: #f4f4f5;
+  --text-muted: #71717a;
+  --glass-border: rgba(255, 255, 255, 0.08);
+  
 }
 
 /* ------------------------------------------------

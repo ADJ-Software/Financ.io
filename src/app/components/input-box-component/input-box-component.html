@@ -1,0 +1,28 @@
+<div class="input-wrapper">
+  
+  <label [for]="inputId">
+    {{ label }}
+    @if(ngControl.control?.hasValidator(requiredValidator)) {
+      <span class="required-star">*</span>
+    }
+  </label>
+
+  <input
+    [id]="inputId"
+    class="native-input"
+    [type]="inputType"
+    [value]="value"
+    [disabled]="isDisabled"
+    [placeholder]="placeholderText"
+    (input)="handleChange($event)"
+    (blur)="onBlur()"
+    [class.error-border]="ngControl.invalid && (ngControl.touched || ngControl.dirty)"
+  />
+
+  @if (ngControl.invalid && (ngControl.touched || ngControl.dirty)) {
+    <span class="error-text">
+      {{ errorMessage }}
+    </span>
+  }
+
+</div>

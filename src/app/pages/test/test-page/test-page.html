@@ -1,16 +1,18 @@
-<div style="display:flex; align-items: center; justify-content:center; height:1000px">
-  
+<div style="display: flex; align-items: center; justify-content: center; height: 1000px">
   <div style="height: 60%; width: 25%; align-items: center; justify-content: center">
-    <app-theme-toggle>
-        
-    </app-theme-toggle>
+    <app-theme-toggle> </app-theme-toggle>
 
     <app-box-component>
-      
       <div content>
         <p>teste</p>
       </div>
 
+      <form action="" [formGroup]="form">
+        <app-input-box-component formControlName="test"> 
+          
+        </app-input-box-component>
+      </form>
+      
     </app-box-component>
   </div>
 </div>
