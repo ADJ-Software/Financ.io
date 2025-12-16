@@ -13,8 +13,8 @@ const Integrantes = [
     imageUrl: "https://github.com/alxmrf.png",
   },
   {
-    title: "Jonatas",
-    imageUrl: "https://github.com/SDC-Diih.png",
+    title: "Jonatas Cortes",
+    imageUrl: "https://github.com/JonatasCortes.png",
   },
 ];
 

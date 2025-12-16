@@ -6,7 +6,20 @@ sidebar_position: 2
 
 ## 2.1 Objetivos do Produto
 
+### Objetivo Geral
+
 O objetivo do Financ.io é criar uma plataforma unificada de gerenciamento de finanças. Espera-se entregar uma solução que não apenas evidencie para onde o dinheiro do usuário está indo, através de processamento inteligente de dados, mas também atue ativamente na economia de recursos, auxiliando na decisão de compra com comparativos de preços e índices de confiabilidade de lojas.
+
+### Objetivos Específicos e Indicadores
+
+| Código  | Objetivo Específico                                                                     | Indicador de Sucesso                                                                  |
+| :------ | :-------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------ |
+| **OE1** | ???                                | ??? |
+| **OE2** | ???                                | ??? |
+| **OE3** | ???                                | ??? |
+| **OE4** | ???                                | ??? |
+| **OE5** | ???                                | ??? |
+
 
 ## 2.2 Características da Solução
 

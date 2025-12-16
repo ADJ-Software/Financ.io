@@ -78,7 +78,7 @@ const config: Config = {
       title: "Financ.io",
       logo: {
         alt: "Financ.io Logo",
-        src: "img/logo.svg",
+        src: "img/logo.png",
       },
       items: [
         {
