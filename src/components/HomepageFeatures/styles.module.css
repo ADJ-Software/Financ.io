@@ -1,0 +1,14 @@
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.integrantesImg {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 100%;
+}
