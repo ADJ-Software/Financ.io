@@ -1,23 +1,19 @@
 import { Component } from '@angular/core';
 import { ThemeToggle } from '../../../components/theme-toggle/theme-toggle';
 import { BoxComponent } from '../../../components/box-component/box-component';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { InputBoxComponent } from '../../../components/input-box-component/input-box-component';
+import { RouterOutlet } from '@angular/router';
+import { KeycloakService } from 'keycloak-angular';
 
 @Component({
-  selector: 'app-test-page',
+  selector: 'app-home-page',
   imports: [ThemeToggle, BoxComponent, ReactiveFormsModule, InputBoxComponent],
-  templateUrl: './test-page.html',
-  styleUrl: './test-page.scss',
+  templateUrl: './home-page.html',
+  styleUrl: './home-page.scss',
 })
-export class TestPage {
-  form: FormGroup;
-
-  constructor(private fb: FormBuilder) {
-    this.form = this.fb.group({
-      test: ['', Validators.required],
-    });
+export class HomePage {
+  constructor(private keycloak: KeycloakService) {
+    console.log('Logado?', this.keycloak.isLoggedIn());
   }
-
-  ngOnInit() {}
 }

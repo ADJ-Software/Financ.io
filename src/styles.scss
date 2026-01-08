@@ -89,6 +89,15 @@ body {
   font-family: sans-serif; /* Replace with your font of choice */
 }
 
+.body-center {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+
 /* Utility classes for easy usage in HTML */
 .bg-surface {
   background-color: var(--color-surface);

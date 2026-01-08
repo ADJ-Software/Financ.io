@@ -1,6 +1,16 @@
 import { Routes } from '@angular/router';
-import { TestPage } from './pages/test/test-page/test-page';
+import { AuthGuard } from './guard/auth.guard';
+import { LoginPage } from './pages/login/login-page/login-page';
+import { HomePage } from './pages/home/home-page/home-page';
 
 export const routes: Routes = [
-    {path:'test',component:TestPage}
+  {
+    path: '',
+    component: HomePage,
+  },
+  {
+    path: 'dashboard',
+    component: LoginPage,
+    canActivate: [AuthGuard],
+  },
 ];

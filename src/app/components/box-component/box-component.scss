@@ -6,8 +6,8 @@
   border-radius: 1.5rem;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   backdrop-filter: blur(24px);
+
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-duration: 500ms;
-  /* Tailwind applies a default ease curve unless specified otherwise */
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
