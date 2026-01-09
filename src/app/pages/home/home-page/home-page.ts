@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ThemeToggle } from '../../../components/theme-toggle/theme-toggle';
 import { BoxComponent } from '../../../components/box-component/box-component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { InputBoxComponent } from '../../../components/input-box-component/input-box-component';
-import { RouterOutlet } from '@angular/router';
-import { KeycloakService } from 'keycloak-angular';
+import Keycloak from 'keycloak-js';
+import { KEYCLOAK } from '../../auth/keycloak.token';
 
 @Component({
   selector: 'app-home-page',
@@ -13,7 +13,16 @@ import { KeycloakService } from 'keycloak-angular';
   styleUrl: './home-page.scss',
 })
 export class HomePage {
-  constructor(private keycloak: KeycloakService) {
-    console.log('Logado?', this.keycloak.isLoggedIn());
+  keycloak:Keycloak;
+  constructor() {
+      this.keycloak = inject(KEYCLOAK);
+  }
+
+  async login() {
+    console.log('Tentando logar em:', this.keycloak.createLoginUrl());
+
+    await this.keycloak.login({
+      redirectUri: window.location.origin
+    });
   }
 }
